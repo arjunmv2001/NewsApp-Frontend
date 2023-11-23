@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-4 mt-5">
+            <!-- Image -->
+            <img class="card-img-top mb-5 mb-md-0"
+                    src={{allLocalNews.ImageURL}} alt="..." />
+        </div>
+        <div class="col-8 mt-5">
+            <div class="head">
+                <h2>{{allLocalNews.heading}}</h2>
+                <p>{{allLocalNews.NewsCategories}}</p>
+                <p>{{allLocalNews.Date}}</p>
+            </div>
+        </div>
+        <div class="content">
+            <p>{{allLocalNews.NewsContent}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <button routerLink="/local-news" class="btn-2">Back &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+
+<app-footer></app-footer>

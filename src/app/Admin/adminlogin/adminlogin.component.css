@@ -1,0 +1,32 @@
+#reg{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: rgba(215, 214, 214, 0.74);
+    height: 400px;
+    width: 600px;
+    border-radius: 7px;
+    
+}
+.press2{
+    color: black;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px; 
+}
+span{
+    color: red;
+    font-family: 'Anton', sans-serif;
+}
+.btn1{
+    background-color: black;
+    color: white;
+    width: 160px;
+    border-radius: 12px;
+    height: 40px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.al{
+    font-size: xx-large;
+}

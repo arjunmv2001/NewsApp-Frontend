@@ -1,0 +1,86 @@
+<!-- <app-delete-account [deleteUser]="userNumber" (Oncancel)="cancelDeleteConfirm()" (onDelete)="deleteFromParent()" >
+  <div *ngIf="deleteSuccessMsg">
+    <h1 class="text-center text-success m-3">{{deleteSuccessMsg}}</h1>
+  </div>
+</app-delete-account> -->
+
+<div>
+  <nav class="navbar" style="background-color: #292929; height:65px; position: fixed; top: 0; width: 100%; z-index:50;">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+      Press Daily<span> e-PAPER</span>
+      </a>
+      <div class="d-flex">
+        <p class="date mt-2 fs-5"><i class="fa-regular fa-calendar-days" style="color: #ffffff;"></i> &nbsp;{{loginDate|date:'mediumDate'}}
+        </p>
+        <div class="dropdown ms-3">
+          <a style="font-family: 'Quicksand', sans-serif;" class="btn me-5 dropdown-toggle fs-4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user fs-4" style="color: #ffffff;"></i> {{user}}
+          </a>
+          <ul class="dropdown-menu" style="background-color: #292929; margin-top: -11px;">
+           <div>
+            <li><a (click)="logout()" routerLink="" class="dropdown-item fs-4" style="background-color: #292929;"><i class="fa-solid fa-right-from-bracket"></i> &nbsp;&nbsp; Logout</a></li>
+            <li style="cursor: pointer;"><a data-bs-toggle="modal" data-bs-target="#staticBackdrops" class="dropdown-item fs-4" style="background-color: #292929;"><i class="fa-solid fa-comment-dots"></i>&nbsp;&nbsp;Feedback </a></li>
+            <li><a data-bs-toggle="modal" data-bs-target="#staticBackdrop"  style="cursor: pointer; background-color: #292929;"  class="dropdown-item text-light fs-5"><i class="fa-solid fa-user-xmark"></i> &nbsp; Delete Account</a></li>
+           </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+ 
+<!-- Modal for delete -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center fs-5">
+        Are you sure to delete this account?
+      </div>
+      <div class="text-center m-3">
+        <button class="btn bg-success mx-3 text-light" (click)="deleteUser()">Yes</button>
+        <button data-bs-dismiss="modal"  class="btn bg-danger mx-3 text-light">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal for feedback -->
+<div class="modal fade" id="staticBackdrops" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Send your feedback</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form [formGroup]="feedbackForm" (ngSubmit)="addFeedback()">
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input name="name" formControlName="name" type="text" class="form-control" id="floatingInput" placeholder="Fullname">
+          <label for="floatingInput">Full Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input name="email" formControlName="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input name="date" formControlName="date" type="date" class="form-control" id="floatingInput">
+          <label for="floatingInput">Date</label>
+        </div>
+        <div class="form-floating">
+          <textarea name="feedback" formControlName="feedback" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Feedback</label>
+        </div>
+        <div class="text-center mt-3">
+          <button class="btn btn-outline-success">Submit</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+

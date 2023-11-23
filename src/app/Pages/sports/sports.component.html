@@ -1,0 +1,33 @@
+<ngx-loading-bar [color]="'#cc1818'" [includeSpinner]="false"></ngx-loading-bar>
+<app-header></app-header>
+<app-stick></app-stick>
+
+<!-- search -->
+<div class="input-field">
+  <input type="text" (keyup)="Search($event)" required spellcheck="false"> 
+  <label>Search here</label>
+</div>
+
+<!-- heading -->
+<div class="mt-5 ms-5 text-danger">
+  <h1 style="font-family: 'Playfair Display', serif; font-weight: bold;">Sports</h1>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+  <div *ngFor="let d of sportsnewsDisplay|filter:searchKey:'title'" class="card" style="width: 18rem; border: 1px;">
+    <img src="{{d.urlToImage}}" class="card-img-top" alt="No Image" width="100%">
+    <div class="card-body">
+      <h5 class="card-title">{{d.title}}</h5>
+      <!-- <p class="card-text">{{d.content}}</p> -->
+      <div style="margin-top: -10px;">
+        <a  style="text-decoration: none; width: 120px; height: 35px; margin-top: 20px;" href="{{d.url}}" class="btn btn-dark btn-sm">Read More...</a>
+      </div>    
+  </div>
+    </div>
+</div> 
+
+<div class="container">
+  <button routerLink="/homepage" class="btn-2">Back &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+<app-footer></app-footer>

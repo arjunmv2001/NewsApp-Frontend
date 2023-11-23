@@ -1,0 +1,327 @@
+#reg{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: rgba(215, 214, 214, 0.74);
+    height: 400px;
+    width: 600px;
+    border-radius: 7px;
+    
+}
+.press2{
+    color: black;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px; 
+}
+.press2 span{
+    color: red;
+    font-family: 'Anton', sans-serif;
+}
+.s2{
+    color: red;
+    font-family: 'Anton', sans-serif;
+}
+.b{
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: -5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+}
+.b:hover{
+    background-color: black;
+    color: white;
+}
+.b2{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.b2 button{
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;  
+}
+.offcanvas-body a{
+    font-size: 20px;
+}
+.ap{
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 8px;
+
+}
+
+
+/* 
+graphs */
+.bar-wraper{
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bar-group{
+    height: 350px;
+    width: 200px;
+    margin: 50px auto;
+    position: relative;
+}
+ul.x-axis,
+ul.y-axis{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.x-axis{
+    position:absolute;
+    bottom:0;
+    text-align: center;
+    width: 100%;
+}
+.x-axis li{
+    float: left;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+.y-axis{
+    position: absolute;
+    text-align: right;
+    width: 100%;
+}
+.y-axis li{
+    border: 1px solid #ffffffe0;;
+    display: block;
+    height: 63.25px;
+    width: 770px;
+}
+.y-axis li span{
+    display: block;
+    width: 40px;
+    margin: -20px 0 0 -60px;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+
+.bars{
+    height: 317px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+.bars-group{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bar{
+    visibility: hidden;
+    height: 0;
+    width: 25%;
+    border: 1px solid #000000e0;
+    border-radius: 3px 3px 0 0;
+    position: absolute;
+    bottom: 0;
+    animation: animate-height;
+    animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+.bar:nth-child(2){
+    left: 30%;
+}
+.bar:nth-child(3){
+    left: 60%;
+}
+.bar:nth-child(4){
+    left: 90%;
+}
+.bar:nth-child(5){
+    left: 120%;
+}
+.bar:nth-child(6){
+    left: 150%;
+}
+.bar:nth-child(7){
+    left: 180%;
+}
+.bar:nth-child(8){
+    left: 210%;
+}
+.bar:nth-child(9){
+    left: 240%;
+}
+.bar:nth-child(10){
+    left: 270%;
+}
+.bar:nth-child(11){
+    left: 300%;
+}
+.bar:nth-child(12){
+    left: 330%;
+}
+.bar-1{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf3a02 100%);
+    animation-delay: 0.3s;
+}
+.bar-2{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.4s;
+}
+.bar-3{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.5s;
+}
+.bar-4{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.6s;
+}
+.bar-5{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.7s;
+}
+.bar-6{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.8s;
+}
+.bar-7{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.9s;
+}
+.bar-8{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.10s;
+}
+.bar-9{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.11s;
+}
+.bar-10{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.12s;
+}
+.bar-11{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.13s;
+}
+.bar-12{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.14s;
+}
+.bar-13{
+    background-image: linear-gradient(to right, #ff0000 0%, #ff0000 47%, #cf0202 50%, #cf0202 100%);
+    animation-delay: 0.15s;
+}
+
+
+@keyframes animate-height {
+    0%{
+        height: 0;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.um{
+    font-size: 35px;
+    color: white;
+    margin-top: 20px;
+    text-align: end;
+    font-weight: bold;
+}
+#graph{
+    margin-left: -200px;
+    height: 580px;
+    width: 1719.5px;
+}
+
+
+.dashboard {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 255px;
+    width: 553px;
+    margin-top: 80px;
+}
+
+.dashboard-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #1c1b1b;
+    border: 1px solid #191616;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cf0202;
+}
+
+.dashboard-item:last-child {
+    margin-bottom: 0;
+}
+
+.dashboard-item-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.dashboard-item-value {
+    font-size: 1.5rem;
+    color: #cf0202
+}
+.do{
+    color: white;
+    font-size: 37px;
+    padding-left: 350px;
+    padding-top: 18px;
+    font-weight: bold;
+}
+.dt{
+    font-size: 28px;
+}
+.table th,td{
+    color: #cf0202;
+}
+
+.cards{
+    background-color: #100f0f;
+    color: rgba(255, 0, 0, 0.905);
+    height: 210px;
+    margin: 37px;
+}
+.cards i{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.cards h6{
+    padding-top: 10px;
+    font-size: 23px;
+    padding-left: 5px;
+
+}
+.cards p{
+    padding-top: 10px;
+    font-size: 16px;
+    padding-left: 5px;
+
+}
+
+
+

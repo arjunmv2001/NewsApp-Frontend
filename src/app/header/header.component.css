@@ -1,0 +1,29 @@
+.navbar a{
+    color: white;
+   font-size:35px;
+   font-family: 'Teko', sans-serif;
+   
+}
+
+.press{
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    padding-top: 20px;
+
+}
+span{
+    color: red;
+    font-family: 'Anton', sans-serif;
+}
+.date{
+    color: white;
+}
+.date a{
+    font-size: 22px;
+    text-decoration: none;
+}
+.user{
+    font-family: 'Playfair Display', serif;
+}

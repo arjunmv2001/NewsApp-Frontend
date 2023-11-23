@@ -1,0 +1,80 @@
+<nav class="navbar bg-body-tertiary" style="height: 80px;">
+    <div class="container-fluid">
+        <a class="press2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars" style="color: #000000;"></i> Press Daily<span class="s2"> e-PAPER</span></a>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="width: 340px;">
+            <div class="offcanvas-header" style="width: 340px;">
+              <h5 class="offcanvas-title fs-3" id="offcanvasScrollingLabel">Press Daily<span class="s2"> e-PAPER</span></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-dark" style="width: 340px; cursor: pointer;">
+                <a style="text-decoration: none; color: #ffffff;" routerLink="/admin-home"><i class="fa-solid fa-home" style="color: #ffffff;"></i>&nbsp; Home</a>
+                <hr>
+                <a style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-square-plus" style="color: #ffffff;"></i> &nbsp;Add News</a>
+                <hr>
+                <!-- <a><i class="fa-solid fa-gears" style="color: #ffffff;"></i>&nbsp; Services</a>
+                <hr> -->
+                <a style="text-decoration: none; color: #ffffff;" routerLink="/Feedback"><i class="fa-solid fa-comment-dots"></i>&nbsp; Feedbacks</a>
+                <hr>
+                <a style="text-decoration: none; color: #ffffff;" routerLink="" ><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i>&nbsp; Logout</a>
+                <hr>
+            </div>
+          </div>
+    </div>
+</nav>
+
+
+<!-- card -->
+<div class="container-fluid">
+<div class="row">
+    <div *ngFor="let news of allNews" class="card border"
+      style="width: 18rem; border: 1px; height: 380px;">
+      <img src="{{news.ImageURL}}" class="card-img-top border" alt="No Image">
+      <div class="card-body">
+        <h5 class="card-title">{{news.heading}}</h5>
+      </div>
+      <div class="text-center my-3">
+        <button routerLink="/Admin-view-news/{{news.id}}" class="btn btn-outline-success mx-3"><i class="fa-solid fa-binoculars"></i> &nbsp;View</button>
+        <button (click)="deleting(news.id)" class="btn btn-outline-danger mx-3"><i class="fa-solid fa-trash"></i> &nbsp;Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="text-center text-white" style="background-color: #ffffff;">
+  <!-- Grid container -->
+  <div class="container  pb-0 pt-5" style="height: 60px;">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+                  class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+                  class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+                  class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+                  class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+                  class="fab fa-linkedin-in"></i></a>
+          <!-- Github -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+                  class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+
+  <!-- Copyright -->
+</footer>
+

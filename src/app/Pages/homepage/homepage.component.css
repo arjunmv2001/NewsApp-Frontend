@@ -1,0 +1,52 @@
+.card{
+    height: 400px;
+    margin: 45px;
+  }
+  img{
+    width: 287px;
+      margin-left: -12px;
+      height: 180px;
+  }
+  .card h5{
+    font-size: 20px;
+  }
+
+    /* ssssssssssssssssssssssss */
+.input-field{
+  position: relative;
+  justify-content: center;
+  margin-left: 27rem;
+  margin-top: -40px;
+}
+.input-field input{
+   width: 650px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border: 2px solid #000000;
+  background: transparent;
+  color: #000000;
+  outline: none;
+}
+.input-field label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #000000;
+  font-size: 19px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+input:focus{
+  border: 2px solid #000000;
+}
+input:focus ~ label,
+input:valid ~ label{
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: #ffffff;
+}

@@ -1,0 +1,378 @@
+<nav class="navbar bg-body-tertiary" style="height: 80px;">
+    <div class="container-fluid">
+        <a class="press2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars" style="color: #000000;"></i> Press Daily<span class="s2"> e-PAPER</span></a>
+        <div class="me-3">
+            <p class="ap">ADMIN DASHBOARD</p>
+        </div>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="width: 340px;">
+            <div class="offcanvas-header" style="width: 340px;">
+              <h5 class="offcanvas-title fs-3" id="offcanvasScrollingLabel">Press Daily<span class="s2"> e-PAPER</span></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-dark text-light mt-1" style="width: 340px; cursor: pointer;">
+                <a data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-square-plus" style="color: #ffffff;"></i> &nbsp;Add News</a>
+                <hr>
+                <a style="text-decoration: none; color: #ffffff;" routerLink="/Admin-viewNews"><i class="fa-solid fa-eye" style="color: #ffffff;"></i>&nbsp; View News</a>
+                <hr>
+                <!-- <a><i class="fa-solid fa-gears" style="color: #ffffff;"></i>&nbsp; Services</a>
+                <hr> -->
+                <a style="text-decoration: none; color: #ffffff;" routerLink="/Feedback"><i class="fa-solid fa-comment-dots"></i>&nbsp; Feedbacks</a>
+                <hr>
+                <a style="text-decoration: none; color: #ffffff;" routerLink="" ><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i>&nbsp; Logout</a>
+            </div>
+          </div>
+    </div>
+    </nav>
+        <!-- homePage -->
+        <!-- graphs -->
+        <div class="container-fluid" id="graph">
+            <div class="row">
+                <div class="col-6 bg-dark" id="cl8">
+                    <div class="bar-wrapper">
+                        <div class="text-center ps-5">
+                            <p class="um">Users Management - 2023</p>
+                        </div>
+                        <div class="bar-group">
+                            <ul class="x-axis" style="display: flex; flex-direction: row;">
+                                <!-- <li><span>2021</span></li> -->
+                            </ul>
+                            <ul class="y-axis">
+                                <li><span>100%</span></li>
+                                <li><span>80%</span></li>
+                                <li><span>60%</span></li>
+                                <li><span>40%</span></li>
+                                <li><span>20%</span></li>
+                                <li><span>0%</span></li>
+                            </ul>
+                            <div class="bars">
+                                <div class="bars-group">
+                                    <div class="bar bar-1" style="height: 50%;"></div>
+                                    <div class="bar bar-2"  style="height: 90%;"></div>
+                                    <div class="bar bar-3"  style="height: 40%;"></div>
+                                    <div class="bar bar-4"  style="height: 60%;"></div>
+                                    <div class="bar bar-5"  style="height: 80%;"></div>
+                                    <div class="bar bar-6"  style="height: 90%;"></div>
+                                    <div class="bar bar-7"  style="height: 50%;"></div>
+                                    <div class="bar bar-8"  style="height: 70%;"></div>
+                                    <div class="bar bar-9"  style="height: 30%;"></div>
+                                    <div class="bar bar-10"  style="height: 60%;"></div>
+                                    <div class="bar bar-11"  style="height: 70%;"></div>
+                                    <div class="bar bar-12"  style="height: 90%;"></div>
+                                    <div class="bar bar-13"  style="height: 70%;"></div>
+                                </div>
+                                <div class="ps-3 text-light">
+                                    <span>Jan</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Feb</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Mar</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Apr</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>May</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Jun</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Jul</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Aug</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Sep</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Oct</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Nov</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Dec</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-6 bg-dark">
+                        <div class="do">
+                            <p>Dashboard Overview</p>
+                        </div>
+                        <div class="dashboard bg-dark">
+                            <div class="dashboard-item">
+                                <span class="dashboard-item-title">Total News Articles</span>
+                                <span class="dashboard-item-value">250</span>
+                            </div>
+                            <div class="dashboard-item">
+                                <span class="dashboard-item-title">Published Articles</span>
+                                <span class="dashboard-item-value">220</span>
+                            </div>
+                            <div class="dashboard-item">
+                                <span class="dashboard-item-title">Draft Articles</span>
+                                <span class="dashboard-item-value">30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            
+                <!-- Table -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex" style="justify-content: center;">
+                                <!-- <h6 class="dt">Data Table</h6> -->
+                            </div>
+                            <table class="table table-dark table-hover shadow">
+                                <thead>
+                                    <tr>
+                                        <th class="text-light fs-4">Data Table</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                      <th scope="col">No</th>
+                                      <th scope="col">Name</th>
+                                      <th scope="col">Email</th>
+                                      <th scope="col">Mobile Number</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Ram</td>
+                                      <td>ram@gmail.com</td>
+                                      <td>8546231588</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Anna</td>
+                                        <td>anna@gmail.com</td>
+                                        <td>9546231588</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>John</td>
+                                        <td>john@gmail.com</td>
+                                        <td>7946231588</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">4</th>
+                                        <td>Joseph</td>
+                                        <td>joseph@gmail.com</td>
+                                        <td>9846231588</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">5</th>
+                                        <td>Henry</td>
+                                        <td>henry@gmail.com</td>
+                                        <td>6846231588</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">6</th>
+                                        <td>Samuel</td>
+                                        <td>samuel@gmail.com</td>
+                                        <td>7846231588</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">7</th>
+                                        <td>Noah</td>
+                                        <td>noah@gmail.com</td>
+                                        <td>7646231588</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">8</th>
+                                        <td>Alice</td>
+                                        <td>alice@gmail.com</td>
+                                        <td>8246231588</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">9</th>
+                                        <td>Mariya</td>
+                                        <td>mariya@gmail.com</td>
+                                        <td>8546231588</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">10</th>
+                                        <td>Mia</td>
+                                        <td>mia@gmail.com</td>
+                                        <td>9746231588</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                        </div>
+                        <div class="col-6">
+                             <!-- Project Card Example -->
+                             <div class="card shadow mb-4 bg-dark" style=" height: 500px;">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 fs-4 text-light">Projects</h6>
+                                </div>
+                                <div class="card-body mt-4 " style="color: #cf0202;">
+                                    <h4 class="small font-weight-bold">Ad Management <span
+                                            class="float-right">60%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%;  background-color: #cf0202;"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Sales Tracking <span
+                                            class="float-right">30%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 30%;  background-color: #cf0202;"
+                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Customer Database <span
+                                            class="float-right">60%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%;  background-color: #cf0202;"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Payout Details <span
+                                            class="float-right">80%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;  background-color: #cf0202;"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Account Setup <span
+                                        class="float-right">70%</span></h4>
+                                <div class="progress mb-4">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;  background-color: #cf0202;"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                    
+        <!-- Cards -->
+                <div class="container-fluid bg-dark">
+                    <div class="row">
+                        <div class="cards" style="width: 19rem;">
+                            <!-- icon -->
+                            <div>
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+                            <div>
+                                <h6>Payments</h6>
+                            </div>
+                            <div>
+                                <p>Ensuring the security of payment data and compliance with relevant payment industry standards.</p>
+                            </div>
+
+                        </div>
+                        <div class="cards" style="width: 19rem;">
+                            <!-- icon -->
+                            <div>
+                                <i class="fa-solid fa-landmark"></i>
+                            </div>
+                            <div>
+                                <h6>Business Operations</h6>
+                            </div>
+                            <div>
+                                <p>Admins should be able to manage user accounts, roles, permissions, and access levels within the organization's system.</p>
+                            </div>
+
+                        </div>
+                        <div class="cards" style="width: 19rem;">
+                            <!-- icon -->
+                            <div>
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <div>
+                                <h6>Account</h6>
+                            </div>
+                            <div>
+                                <p>Admins should be able to create, modify, and delete user accounts.Keep detailed logs of user activities within the admin dashboard. </p>
+                            </div>
+
+                        </div>
+                        <div class="cards" style="width: 19rem;">
+                            <!-- icon -->
+                            <div>
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h6>Security</h6>
+                            </div>
+                            <div>
+                                <p>Ensure the security of sensitive data stored on the admin side, including user credentials, content drafts, analytics, and administrative logs.</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                
+        
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add News</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form [formGroup]="addnewsForm" (ngSubmit)="addingNews()">
+                        <div class="modal-body">
+                            <div class="form-floating mb-3">
+                                <input name="heading" formControlName="heading" type="text" class="form-control" id="newstitle" placeholder="News Title">
+                                <label for="newstitle">News Title</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" name="NewsContent" formControlName="NewsContent" placeholder="Enter News main content"
+                                    id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">News Main Content</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input name="ImageURL" formControlName="ImageURL"  type="text" class="form-control" id="image" placeholder="Image URL">
+                                <label for="image">Image URL</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input name="Date" formControlName="Date" type="date" class="form-control" id="newsdate" placeholder="Date" value="dd-mm-yyyy">
+                                <label for="newstitle">Date</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select name="NewsCategories" formControlName="NewsCategories"  class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected>News Category</option>
+                                    <option>Entertainment</option>
+                                    <option>Tech News</option>
+                                    <option> Business</option>
+                                    <option>Sports</option>
+                                    <option>Politics</option>
+                                    <option>Health</option>
+                                    <option>Science</option>
+                                </select>
+                                <label for="floatingSelect">News Category</label>
+                            </div>
+                            <div class="form-floating ">
+                                <input name="id" formControlName="id" type="text" class="form-control" id="floatingid" placeholder="News ID">
+                                <label for="floatingdate">News ID</label>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-dark">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+<!-- footer -->
+<footer class="text-center text-white" style="background-color: #ffffff;">
+    <!-- Grid container -->
+    <div class="container  pb-0 pt-4" style="height: 60px;">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+                    class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+                    class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+                    class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <!-- Github -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+                    class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+
+    <!-- Copyright -->
+</footer>

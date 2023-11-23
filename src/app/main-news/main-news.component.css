@@ -1,0 +1,231 @@
+#m1{
+    background-color: #F1F1F1;
+    height: 550px;
+}
+.main{
+    width: 640px;
+    height: 405px;
+    background-color: white;
+    border-radius: 30px;
+    margin-left: 12rem;
+    margin-top: 30px;
+}
+.press{
+    color: black;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    padding-top: 40px;
+    margin-left: 11rem;
+    border: 1px;
+
+}
+span{
+    color: red;
+    font-family: 'Anton', sans-serif;
+}
+h1{
+    font-size: 30px;
+    width: 420px;
+    margin-left: 7rem;
+    padding-top: 60px;
+}
+h4{
+    font-size: 18px;
+    width: 420px;
+    margin-left: 7rem;
+    margin-top: 25px;
+    color: #8D8D8D;
+
+}
+.main2{
+    width: 475px;
+    height: 260px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: -80px;
+}
+.main3{
+    width: 475px;
+    height: 180px;
+    background-color: white;
+    border-radius: 30px;
+    margin-left: -80px;
+}
+button{
+    width: 210px;
+    height: 51px;
+    border-radius: 12px;
+    font-weight: bolder;
+    margin-left: 9rem;
+}
+.day{
+    padding-top: 7px;
+    margin-left: 5rem;
+}
+.press1{
+    color: black;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-left: 5.5rem;
+    border: 1px;
+}
+.day1{
+    margin-left: 7rem;
+}
+img{
+    width: 155px;
+    height: 45px;
+    margin-left: 55px;
+}
+.img1{
+    width: 1400px;
+    height: 400px;
+    margin-left: 3rem;
+    
+}
+.card img{
+    width: 287px;
+    margin-left: -12px;
+    height: 180px;
+}
+.card{
+    margin: 75px;
+}
+.sub{
+    width: 120px;
+    height: 35px;
+    border-radius: 12px;
+    margin-left: 53px;
+    color: white;
+    background-color: #ee9617;
+background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+border: 1px;
+margin-top: 16px;
+
+    
+}
+.sub2{
+    background-color: #378b29;
+background-image: linear-gradient(315deg, #378b29 0%, #74d680 74%);
+width: 120px;
+    height: 35px;
+    border-radius: 12px;
+    margin-left: 53px;
+    color: white;
+    border: 1px;
+}
+.sub3{
+width: 120px;
+    height: 35px;
+    border-radius: 12px;
+    margin-left: 53px;
+    color: white;
+    border: 1px;
+    background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+.con{
+    background-color: #F1F1F1;
+    height: 167px;
+    margin-left: 56px;
+    width: 1175px;
+   
+}
+.con1{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.con2{
+    margin-left: 20px;
+}
+h6{
+    /* text-align: end; */
+    padding-left: 18rem;
+}
+.press2{
+    color: black;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px; 
+}
+
+.log a{
+    color: white;
+
+}
+
+#scroll img{
+    width: 18rem;
+    height: 210px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+#scroll{
+    margin-top: 5px;
+}
+.button2{
+    background-color: rgb(167, 11, 11);
+    width: 150px;
+    height: 35px;
+    border-radius: 12px;
+    margin-left: 53px;
+    color: white;
+    border: 1px;
+
+}
+
+.c1{
+    width: 150px;
+    height: 150px;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    margin: 7px;
+    border-radius: 5px;
+
+}
+.c1 p{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.c2{
+    width: 150px;
+    height: 150px;
+    background-color: #378b29;
+    background-image: linear-gradient(315deg, #378b29 0%, #74d680 74%);
+    margin: 7px;
+    border-radius: 5px;
+
+}
+.c2 p{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.c3{
+    width: 150px;
+    height: 150px;
+    background-color: #ee9617;
+background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+margin: 7px;
+border-radius: 5px;
+
+}
+.c3 p{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.p1{
+    width: 427px;
+    height: 255px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}

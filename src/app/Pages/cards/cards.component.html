@@ -1,0 +1,156 @@
+<ngx-loading-bar [color]="'#cc1818'" [includeSpinner]="false"></ngx-loading-bar>
+<div id="nav" style="margin-top: 8rem;">
+  <ul class="nav-menu clearfix unstyled">
+    <li><a routerLink="/Technews" class="three-d">
+        Tech News
+        <span class="three-d-box"><span class="front">Tech News</span><span class="back">Tech News</span></span>
+      </a></li>
+    <li><a routerLink="/Businessnews" class="three-d">
+        Business News
+        <span class="three-d-box"><span class="front">Business News</span><span class="back">Business News</span></span>
+      </a></li>
+    <li><a routerLink="/Sportsnews" class="three-d">
+        Sports
+        <span class="three-d-box"><span class="front">Sports</span><span class="back">Sports</span></span>
+      </a></li>
+    <li><a routerLink="/Politicsnews" class="three-d">
+        Politics
+        <span class="three-d-box"><span class="front"> Politics </span><span class="back"> Politics</span></span>
+      </a></li>
+    <li><a routerLink="/Healthnews" class="three-d">
+        Health
+        <span class="three-d-box"><span class="front"> Health</span><span class="back"> Health</span></span>
+      </a></li>
+    <li><a routerLink="/Sciencenews" class="three-d">
+        Science
+        <span class="three-d-box"><span class="front"> Science</span><span class="back"> Science</span></span>
+      </a></li>
+    <li><a routerLink="/Entertainmentnews" class="three-d">
+        Entertainment
+        <span class="three-d-box"><span class="front"> Entertainment</span><span class="back">
+            Entertainment</span></span>
+      </a></li>
+      <li><a routerLink="/local-news" class="three-d">
+        Local News
+        <span class="three-d-box"><span class="front"> Local News</span><span class="back">
+          Local News</span></span>
+      </a></li>
+    
+  </ul>
+</div>
+
+
+
+<div class="mt-5 ms-5 text-danger">
+  <h1 style="font-family: 'Playfair Display', serif; font-weight: bold;">Top Picks</h1>
+</div>
+<!-- carousel -->
+
+<div class="accordian mt-5">
+  <ul>
+    <li>
+      <div class="image_title">
+        <h3 class="text-light">MOVIES</h3>
+        <a>TIFF 2023 | Nickelback reclaims the narrative with documentary ‘Love to Hate: Nickelback'</a>
+      </div>
+      <a>
+        <img
+          src="https://th-i.thgim.com/public/incoming/6qaoei/article67288623.ece/alternates/PORTRAIT_320/Film_TIFF_Nickelback_59268.jpg" />
+      </a>
+    </li>
+    <li>
+      <div class="image_title">
+        <h3 class="text-light ">ENTERTAINMENT</h3>
+        <a class="my-3">
+          John Cena meets Karthi as WWE returns to India</a>
+      </div>
+      <a>
+        <img
+          src="https://th-i.thgim.com/public/entertainment/movies/o9gqvh/article67288013.ece/alternates/PORTRAIT_320/Karthi%20John%20Cena.jfif" />
+      </a>
+    </li>
+    <li>
+      <div class="image_title">
+        <h3 class="text-light">MOVIES</h3>
+        <a>
+          'Jawan' becomes biggest opening film of Hindi cinema with Rs 129 cr worldwide, surpasses 'Pathaan'
+        </a>
+      </div>
+      <a>
+        <img
+          src="https://th-i.thgim.com/public/incoming/ymdc8v/article67288052.ece/alternates/PORTRAIT_320/20230907123L.jpg" />
+      </a>
+    </li>
+    <li>
+      <div class="image_title">
+        <h3 class="text-light">Gadgets</h3>
+        <a>
+          Redmi Smart Fire TV Review | Passable, budget entertainment for casual watchers</a>
+      </div>
+      <a>
+        <img
+          src="https://th-i.thgim.com/public/incoming/tf5hma/article67378618.ece/alternates/PORTRAIT_320/Redmi%20TV.jpg" />
+      </a>
+    </li>
+    <li>
+      <div class="image_title">
+        <h3 class="text-light">SPONSORED</h3>
+        <a class="my-3">9 Places In Dubai Where Shopping On A Budget Is A Dream</a>
+      </div>
+      <a>
+        <img
+          src="https://th-i.thgim.com/public/incoming/1ag4ce/article67251075.ece/alternates/LANDSCAPE_1200/Large-Ramadan_Foodie%20Trail_City%20Walk_Perfume_DTCM.jpg" />
+      </a>
+    </li>
+    <li>
+      <div class="image_title">
+        <h3 class="text-light">Movies</h3>
+        <a class="my-3">  
+        Amitabh Bachchan and Rajinikanth reunite for TJ Gnanavel’s ‘Thalaivar 170’</a>
+      </div>
+      <a>
+        <img
+          src="https://th-i.thgim.com/public/incoming/nwlpdn/article67375826.ece/alternates/PORTRAIT_320/2_Goa_IFFI_2019.jpg" />
+      </a>
+    </li>
+    <li> 
+      <div class="image_title">
+        <h3 class="text-light">Other Sports</h3>
+        <a class="my-3"> 
+          Hangzhou Asian Games | Deotale-Jyothi pair wins compound mixed team gold</a>
+      </div>
+      <a>
+        <img
+          src="https://th-i.thgim.com/public/incoming/6uk02n/article67378744.ece/alternates/PORTRAIT_320/China_Asian_Games_Archery_97410.jpg" />
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+
+<!-- search -->
+<div class="input-field mt-5">
+  <input type="text" (keyup)="Search($event)" required spellcheck="false">
+  <label>Search here</label>
+</div>
+
+<!-- Cards -->
+<div class="mt-5 ms-5 text-danger">
+  <h1 style="font-family: 'Playfair Display', serif; font-weight: bold;">Top News</h1>
+</div>
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div *ngFor="let d of topHeadingDisplay|filter:searchKey:'title'" class="card border"
+      style="width: 18rem; border: 1px;">
+      <img src="{{d.urlToImage}}" class="card-img-top" alt="No Image">
+      <div class="card-body">
+        <h5 class="card-title">{{d.title}}</h5>
+        <div style="margin-top: -10px;">
+          <a style="text-decoration: none; width: 120px; height: 35px; margin-top: 20px;" href="{{d.url}}"
+            class="btn btn-dark btn-sm">Read More...</a>
+        </div>
+        <!-- <p class="card-text">{{d.content}}</p> -->
+      </div>
+    </div>
+  </div>
